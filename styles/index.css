@@ -1,2 +1,18 @@
 @import "./reset.css";
 @import "./variables.css";
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--grey);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: var(--white);
+    border-radius: 9px;
+    min-height: 50vh;
+    width: 400px;
+}
