@@ -2,24 +2,80 @@
 @import "./variables.css";
 
 body {
-    font-family: var(--primary-font);
+    align-items: center;
     background-color: var(--grey);
     display: flex;
-    min-height: 100vh;
+    font-family: var(--primary-font);
     justify-content: center;
-    align-items: center;
+    min-height: 100vh;
 }
 
 .main {
     background-color: var(--white);
     border-radius: 9px;
     min-height: 50vh;
-    width: 400px;
     padding: 1.875rem;
+    width: 400px;
 }
+
 .title {
-     color: var(--blue);
-     font-size: 1.5rem;
-     font-weight: 800;
-     text-align: center;
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.item {
+    color: var(--dark-blue);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item__input {
+    display: none;
+
+}
+
+.item__label {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.item__input:checked + .item__label {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+.item__check {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--blue);
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.item__input:checked + .item__label .item__check {
+    background-color: var(--blue);
+}
+
+.item__button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    opacity: 0;
+}
+
+.item:hover .item__button {
+    opacity: 1;
+}
+
+.item__button-image {
+    width: 25px;
+    height: auto;
 }
