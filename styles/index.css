@@ -2,24 +2,80 @@
 @import "./variables.css";
 
 body {
-    font-family: var(--primary-font);
+    align-items: center;
     background-color: var(--grey);
     display: flex;
-    min-height: 100vh;
+    font-family: var(--primary-font);
     justify-content: center;
-    align-items: center;
+    min-height: 100vh;
 }
 
 .main {
     background-color: var(--white);
     border-radius: 9px;
     min-height: 50vh;
-    width: 400px;
     padding: 1.875rem;
+    width: 400px;
 }
+
 .title {
-     color: var(--blue);
-     font-size: 1.5rem;
-     font-weight: 800;
-     text-align: center;
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.item {
+    align-items: center;
+    color: var(--dark-blue);
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+.item__input {
+    display: none;
+
+}
+
+.item__label {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+    margin-left: 1rem;
+}
+
+.item__input:checked + .item__label {
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+.item__check {
+    border-radius: 4px;
+    border: 1px solid var(--blue);
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.item__input:checked + .item__label .item__check {
+    background-color: var(--blue);
+}
+
+.item__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    outline: 0;
+}
+
+.item:hover .item__button {
+    opacity: 1;
+}
+
+.item__button-image {
+    height: auto;
+    width: 25px;
 }
