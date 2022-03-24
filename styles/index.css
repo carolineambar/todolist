@@ -79,3 +79,40 @@ body {
     height: auto;
     width: 25px;
 }
+
+.form {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.form__input {
+    background-color: var(--grey);
+    border-radius: 9px;
+    border: 0;
+    color: var(--dark-blue);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 600;
+    outline: 0;
+    padding: .75rem 3.75rem .75rem 1.125rem;
+    width: 100%;
+}
+
+.form__input:focus {
+    border: 1px solid var(--dark-blue-rgb);
+}
+
+.form__button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 8px;
+    top: calc(50% - 10px);
+}
+
+.form__button-image {
+    height: 20px;
+    width: auto;
+}
