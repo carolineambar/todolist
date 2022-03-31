@@ -18,12 +18,37 @@ body {
     width: 400px;
 }
 
-.title {
+::placeholder {
     color: var(--blue);
+    opacity: .5;
+}
+
+.title__input {
+    background-position: 98% center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    border-radius: 9px;
+    border: 0;
+    color: var(--blue);
+    cursor: pointer;
+    font-family: var(--primary-font);
     font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
+    outline: 0;
+    padding-right: 50px;
+    padding: .75rem 3.75rem .75rem 1.125rem;
     text-align: center;
+    width: 100%;
+}
+
+.title__input:hover {
+    background-image: url('../assets/pencil.png');
+}
+
+.title__input:focus {
+    border: 1px solid var(--dark-blue-rgb);
+    box-shadow: 0 0 30px var(--shadow);
 }
 
 .item {
@@ -100,6 +125,7 @@ body {
 
 .form__input:focus {
     border: 1px solid var(--dark-blue-rgb);
+    box-shadow: 0 0 30px var(--shadow);
 }
 
 .form__button {
