@@ -13,24 +13,15 @@
 <body>
     <main class="main">
         <input type="text" value="My List" placeholder="My List" class="title__input">
-        <ul>
-            <li class="item">
-                <input type="checkbox" id="item" class="item__input">
-                <label class="item__label" for="item">
-                    <i class="item__check"></i>
-                    Item 1
-                </label>
-                <button class="item__button">
-                    <img class="item__button-image" src="./assets/7133351.png" alt="Ícone de lixeira para deletar item">
-                </button>
-            </li>
+        <ul data-ul>
         </ul>
-        <form class="form">
-            <input type="text" id="form" class="form__input">
+        <form class="form" data-form>
+            <input data-input type="text" id="form" class="form__input" autocomplete="off">
             <button class="form__button">
                 <img class="form__button-image" src="./assets/plus.png" alt="Ícone para adição de item">
             </button>
         </form>
     </main>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
