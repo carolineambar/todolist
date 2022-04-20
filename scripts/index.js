@@ -5,7 +5,25 @@
         return notes
     }
 
+    const createNote = async (note) => {
+        const request = await fetch('http://localhost:3000/notes', {
+            headers: {
+                'Content-Type': 'application/json'
+            }, 
+            method: 'POST',
+            body: JSON.stringify(note)
+        })
+        const data = await request.json()
+        return data
+    }
+
     const deleteItem = (id) => {
+        fetch(`http://localhost:3000/notes/${id}`, {
+            headers: {
+                'Content-Type': 'application/json'
+            }, 
+            method: 'DELETE',
+        })
         const item = document.querySelector(`[data-id="${id}"]`)
         item.remove()
     }
@@ -39,7 +57,6 @@
         const list = document.querySelector('[data-ul]')
         const form = document.querySelector('[data-form]')
         const input = document.querySelector('[data-input]')
-        let count = 0
 
         const notes = await getNotes()
         notes.forEach((note) => {
@@ -51,8 +68,10 @@
         form.addEventListener('submit', function(event){ 
             // impedir de recarregar a página
             event.preventDefault()
-            const item = createItem(input.value, count)
-            count++
+            const {id} = createNote({
+                value: input.value
+            })
+            const item = createItem(input.value, id)
             
             // cria um novo item na lista
             list.appendChild(item)
