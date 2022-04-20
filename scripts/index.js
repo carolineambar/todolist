@@ -1,4 +1,10 @@
 (() => {
+    const getNotes = async () => {
+        const resposta = await fetch('http://localhost:3000/notes')
+        const notes = await resposta.json()
+        return notes
+    }
+
     const deleteItem = (id) => {
         const item = document.querySelector(`[data-id="${id}"]`)
         item.remove()
@@ -29,11 +35,18 @@
         return item
     }
     
-    const initTodo = () => {
+    const initTodo = async () => {
         const list = document.querySelector('[data-ul]')
         const form = document.querySelector('[data-form]')
         const input = document.querySelector('[data-input]')
         let count = 0
+
+        const notes = await getNotes()
+        notes.forEach((note) => {
+            const item = createItem(note.value, note.id)
+            list.appendChild(item)
+        })
+
         // quando o formulário for submetido
         form.addEventListener('submit', function(event){ 
             // impedir de recarregar a página
