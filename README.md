@@ -59,12 +59,10 @@ Now if you go to http://localhost:3000/notes, you'll get
 
 - Estrutura do projeto
 
-Após os passos acima, você irá acessar o seguinte link: https://carolineambar.github.io/todolist/
+Após os passos anteriores, você irá acessar o seguinte link: https://carolineambar.github.io/todolist/. E através dele terá a aplicação rodando já com os dados que você inseriu diretamente no documento db.json.
 
-Nesse link terá a aplicação rodando já com os dados que você inseriu diretamente no documento db.json.
-
-A partir da aplicação poderá adicionar ou remover itens da lista de tarefa, bem como marcar ou desmarcar as tarefas caso realizadas e alterar o título da lista.
+A partir dessa aplicação você poderá adicionar ou remover itens da lista de tarefa, bem como marcar ou desmarcar as tarefas caso realizadas e alterar o título da lista conforme sua necessidade.
 
 - Futuras melhorias 
 
-Atualmente para rodar o projeto é necessário rodar um BackEnd em sua máquina, porém como futura melhoria irei desenvolver o BackEnd desse projeto.
+Atualmente para rodar o projeto é necessário rodar um BackEnd em sua máquina, como o JSON Server, porém como futura melhoria irei desenvolver o BackEnd desse projeto.
