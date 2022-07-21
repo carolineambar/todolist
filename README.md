@@ -7,7 +7,7 @@ Nesse projeto criei uma lista de taferas utilizando como referência o design do
 
 ## Tecnologias usadas:
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="40" height="40" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" /> 
 
 ## Começando 
 
@@ -67,4 +67,4 @@ A partir dessa aplicação você poderá adicionar ou remover itens da lista de 
 
 ## Futuras melhorias 
 
-Atualmente para rodar o projeto é necessário rodar um BackEnd em sua máquina, como o JSON Server, porém como futura melhoria irei desenvolver o BackEnd desse projeto.
+Atualmente para rodar o projeto é necessário rodar um servidor em sua máquina, como o JSON Server, porém como futura melhoria irei desenvolver o BackEnd desse projeto.
