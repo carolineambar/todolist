@@ -79,9 +79,13 @@ A partir dessa aplicação você poderá adicionar ou remover itens da lista de 
 ```
 
 ``` assets: ``` Pasta com as imagens utilizadas como botões
+
 ``` scripts: ``` Contém o documento com todas as funcionalidades da aplicação
+
 ``` styles: ``` Contém toda a configuração de estilo da aplicação
+
 ``` db.json: ``` Documento com os dados do Servidor
+
 ``` index.html: ``` Documento com a estrutura de conteúdos da aplicação
 
 ## Futuras melhorias 
